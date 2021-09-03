@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "43d4248e-58e4-4cdc-9ab3-cd4386a7f266",
+		"name": "3107",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "onliner.by",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vikos-ru.ru",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "vikos-ru.ru",
+					"host": [
+						"vikos-ru",
+						"ru"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mail.ru",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "mail.ru",
+					"host": [
+						"mail",
+						"ru"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
